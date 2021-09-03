@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{863F41FE-8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{19E4F2A1-4C24-4D37-8D3E-A0EAD634251B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyOne.Domain", "SkyOne.Domain\SkyOne.Domain.csproj", "{FCFF1CC4-064C-4604-A035-B46FD0ABD8A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyOne.Domain", "SkyOne.Domain\SkyOne.Domain.csproj", "{FCFF1CC4-064C-4604-A035-B46FD0ABD8A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkyOne.Tests", "SkyOne.Tests\SkyOne.Tests.csproj", "{584E7C35-A367-4724-B4E0-675ACD4C3AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkyOne.Tests", "SkyOne.Tests\SkyOne.Tests.csproj", "{584E7C35-A367-4724-B4E0-675ACD4C3AEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

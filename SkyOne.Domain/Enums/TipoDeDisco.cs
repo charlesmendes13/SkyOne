@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SkyOne.Domain.Enum
+namespace SkyOne.Domain.Enums
 {
     public enum TipoDeDisco
     {

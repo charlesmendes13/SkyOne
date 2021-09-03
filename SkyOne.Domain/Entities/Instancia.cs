@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkyOne.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,46 @@ namespace SkyOne.Domain.Entities
 {
     public class Instancia
     {
-		public Guid Id { get; set; }
+		public Guid Id { get; private set; }
+		public string Nome { get; private set; }
+		public string SistemaOperacional { get; private set; }
+		public int QuantidadeMemoria { get; private set; }
+		public List<Disco> Discos { get; private set; }
+		public bool Ativo { get; private set; }
 
-		public string Nome { get; set; }
+		public Instancia() { }
 
-		public string SistemaOperacional { get; set; }
+		public static Instancia Criar(string nome,
+			string sistemaOperacional,
+			int quantidadeMemoria,
+			List<Disco> discos,
+			bool ativo)
+        {
+			
+			if (string.IsNullOrEmpty(nome))
+				throw new InvalidOperationException();
 
-		public int QuantidadeMemoria { get; set; }
+			if (string.IsNullOrEmpty(sistemaOperacional))
+				throw new InvalidOperationException();
 
-		public List<Disco> Discos { get; set; }
+			if (quantidadeMemoria < 1)
+				throw new InvalidOperationException();
 
-		public bool Ativo { get; set; }
+			if (!discos.Any(x => x.Tipo == TipoDeDisco.Boot))
+				throw new InvalidOperationException();
+
+			if (!Convert.ToBoolean(ativo))
+				throw new InvalidOperationException();
+
+			return new Instancia
+			{
+				Id = Guid.NewGuid(),
+				Nome = nome,
+				SistemaOperacional = sistemaOperacional,
+				QuantidadeMemoria = quantidadeMemoria,
+				Discos = discos,
+				Ativo = ativo
+			};
+		}		
 	}
 }

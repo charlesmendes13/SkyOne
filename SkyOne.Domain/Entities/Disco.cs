@@ -1,4 +1,4 @@
-﻿using SkyOne.Domain.Enum;
+﻿using SkyOne.Domain.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,12 +9,33 @@ namespace SkyOne.Domain.Entities
 {
     public class Disco
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; private set; }
+        public int Tamanho { get; private set; }
+        public TipoDeDisco Tipo { get; private set; }
+        public bool Ativo { get; private set; }
 
-        public int Tamanho { get; set; }
+        public Disco() { }
 
-        public TipoDeDisco Tipo { get; set; }
+        public static Disco Criar(int tamanho,
+            TipoDeDisco tipo,
+            bool ativo)
+        {
+            if (tamanho < 1)
+                throw new InvalidOperationException();
 
-        public bool Ativo { get; set; }
+            if (!Enum.IsDefined(typeof(TipoDeDisco), tipo))
+                throw new InvalidOperationException();
+         
+            if (!Convert.ToBoolean(ativo))
+                throw new InvalidOperationException();
+
+            return new Disco
+            {
+                Id = Guid.NewGuid(),
+                Tamanho = tamanho,
+                Tipo = tipo,
+                Ativo = ativo
+            };
+        }        
     }
 }

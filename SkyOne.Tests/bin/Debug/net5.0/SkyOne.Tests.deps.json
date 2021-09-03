@@ -31,14 +31,6 @@
           }
         }
       },
-      "FluentValidation/10.3.3": {
-        "runtime": {
-          "lib/net5.0/FluentValidation.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "10.3.3.0"
-          }
-        }
-      },
       "Microsoft.CodeCoverage/16.9.4": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -1138,9 +1130,6 @@
       },
       "xunit.runner.visualstudio/2.4.3": {},
       "SkyOne.Domain/1.0.0": {
-        "dependencies": {
-          "FluentValidation": "10.3.3"
-        },
         "runtime": {
           "SkyOne.Domain.dll": {}
         }
@@ -1166,13 +1155,6 @@
       "sha512": "sha512-JbLis99YvgAuA3Khr9m5WvngBWGEmfYq3u2GxV7ksbOK9x7BCeQUCTjn5LHxrG/qu5XmlfDs4O60xTMvARiKYA==",
       "path": "fluentassertions/6.1.0",
       "hashPath": "fluentassertions.6.1.0.nupkg.sha512"
-    },
-    "FluentValidation/10.3.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-sgRC+7q4mnmDHE9ehk2cvb+FDTy/gtw5iBoKFY3FVp1ZwFsLS0kIcdSpNlCO3XyyNIzZI2ca8I/YiFG9pM6x0Q==",
-      "path": "fluentvalidation/10.3.3",
-      "hashPath": "fluentvalidation.10.3.3.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.9.4": {
       "type": "package",

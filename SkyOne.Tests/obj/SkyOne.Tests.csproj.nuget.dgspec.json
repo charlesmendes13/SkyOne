@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj": {}
+    "D:\\Visual Studio\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj": {
+    "D:\\Visual Studio\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj",
+        "projectUniqueName": "D:\\Visual Studio\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj",
         "projectName": "SkyOne.Domain",
-        "projectPath": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj",
+        "projectPath": "D:\\Visual Studio\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj",
         "packagesPath": "C:\\Users\\Charles\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Domain\\obj\\",
+        "outputPath": "D:\\Visual Studio\\SkyOne\\SkyOne.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,12 +45,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "FluentValidation": {
-              "target": "Package",
-              "version": "[10.3.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -70,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj": {
+    "D:\\Visual Studio\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj",
+        "projectUniqueName": "D:\\Visual Studio\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj",
         "projectName": "SkyOne.Tests",
-        "projectPath": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj",
+        "projectPath": "D:\\Visual Studio\\SkyOne\\SkyOne.Tests\\SkyOne.Tests.csproj",
         "packagesPath": "C:\\Users\\Charles\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Tests\\obj\\",
+        "outputPath": "D:\\Visual Studio\\SkyOne\\SkyOne.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -100,8 +94,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj": {
-                "projectPath": "C:\\Users\\Charles\\source\\repos\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj"
+              "D:\\Visual Studio\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj": {
+                "projectPath": "D:\\Visual Studio\\SkyOne\\SkyOne.Domain\\SkyOne.Domain.csproj"
               }
             }
           }
