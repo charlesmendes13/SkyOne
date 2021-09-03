@@ -1,0 +1,12 @@
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\bin\Debug\net5.0\SkyOne.Domain.deps.json
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\bin\Debug\net5.0\SkyOne.Domain.dll
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\bin\Debug\net5.0\ref\SkyOne.Domain.dll
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\bin\Debug\net5.0\SkyOne.Domain.pdb
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.csproj.AssemblyReference.cache
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.AssemblyInfoInputs.cache
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.AssemblyInfo.cs
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.dll
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\ref\SkyOne.Domain.dll
+C:\Users\Charles\source\repos\SkyOne\SkyOne.Domain\obj\Debug\net5.0\SkyOne.Domain.pdb
