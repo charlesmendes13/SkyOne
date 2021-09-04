@@ -18,7 +18,7 @@ namespace SkyOne.Domain.Entities
 
 		public Instancia() { }
 
-		public static Instancia Criar(string nome,
+		public Instancia(string nome,
 			string sistemaOperacional,
 			int quantidadeMemoria,
 			List<Disco> discos,
@@ -26,29 +26,26 @@ namespace SkyOne.Domain.Entities
         {
 			
 			if (string.IsNullOrEmpty(nome))
-				throw new InvalidOperationException();
+				throw new InvalidOperationException("O nome não pode ser nulo");
 
 			if (string.IsNullOrEmpty(sistemaOperacional))
-				throw new InvalidOperationException();
+				throw new InvalidOperationException("O Sistema Operacional não pode ser nulo");
 
 			if (quantidadeMemoria < 1)
-				throw new InvalidOperationException();
+				throw new InvalidOperationException("O Tamanho da Memória não pode ser nulo");
 
 			if (!discos.Any(x => x.Tipo == TipoDeDisco.Boot))
-				throw new InvalidOperationException();
+				throw new InvalidOperationException("A Instanciua deve conter um Disco de Boot");
 
 			if (!Convert.ToBoolean(ativo))
-				throw new InvalidOperationException();
+				throw new InvalidOperationException("O valor de ativo dever ser 'true/false'");
 
-			return new Instancia
-			{
-				Id = Guid.NewGuid(),
-				Nome = nome,
-				SistemaOperacional = sistemaOperacional,
-				QuantidadeMemoria = quantidadeMemoria,
-				Discos = discos,
-				Ativo = ativo
-			};
+			Id = Guid.NewGuid();
+			Nome = nome;
+			SistemaOperacional = sistemaOperacional;
+			QuantidadeMemoria = quantidadeMemoria;
+			Discos = discos;
+			Ativo = ativo;			
 		}		
 	}
 }

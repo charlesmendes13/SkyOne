@@ -17,13 +17,13 @@ namespace SkyOne.Tests.Domain
         [Fact]
         public void CriarInstanciaTest()
         {
-            var instancia = Instancia.Criar(nome: "PC", 
+            var instancia = new Instancia(nome: "PC", 
                 sistemaOperacional: "Linux", 
                 quantidadeMemoria: 1024, 
                 discos: new List<Disco>() 
                 { 
-                    Disco.Criar(tamanho: 2048, tipo: TipoDeDisco.Boot, ativo: true),
-                    Disco.Criar(tamanho: 2048, tipo: TipoDeDisco.Armazenamento, ativo: true)
+                    new Disco(tamanho: 2048, tipo: TipoDeDisco.Boot, ativo: true),
+                    new Disco(tamanho: 2048, tipo: TipoDeDisco.Armazenamento, ativo: true)
                 }, 
                 ativo: true);            
 

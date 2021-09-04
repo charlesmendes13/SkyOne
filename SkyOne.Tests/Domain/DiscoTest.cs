@@ -17,7 +17,9 @@ namespace SkyOne.Tests.Domain
         [Fact]
         public void CriarDiscoTest()
         {
-            var disco = Disco.Criar(tamanho: 2048, tipo: TipoDeDisco.Boot, ativo: true);
+            var disco = new Disco(tamanho: 2048, 
+                tipo: TipoDeDisco.Boot, 
+                ativo: true);
 
             disco.Should();
         }

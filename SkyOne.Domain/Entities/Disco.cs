@@ -14,28 +14,23 @@ namespace SkyOne.Domain.Entities
         public TipoDeDisco Tipo { get; private set; }
         public bool Ativo { get; private set; }
 
-        public Disco() { }
-
-        public static Disco Criar(int tamanho,
+        public Disco(int tamanho,
             TipoDeDisco tipo,
             bool ativo)
         {
             if (tamanho < 1)
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("O tamanho deve ser maior que 1");
 
             if (!Enum.IsDefined(typeof(TipoDeDisco), tipo))
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("O Tipo do Disco deve ser definido");
          
             if (!Convert.ToBoolean(ativo))
-                throw new InvalidOperationException();
+                throw new InvalidOperationException("O valor de ativo dever ser 'true/false'");
 
-            return new Disco
-            {
-                Id = Guid.NewGuid(),
-                Tamanho = tamanho,
-                Tipo = tipo,
-                Ativo = ativo
-            };
+            Id = Guid.NewGuid();
+            Tamanho = tamanho;
+            Tipo = tipo;
+            Ativo = ativo;           
         }        
     }
 }
