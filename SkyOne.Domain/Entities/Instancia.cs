@@ -16,8 +16,6 @@ namespace SkyOne.Domain.Entities
 		public List<Disco> Discos { get; private set; }
 		public bool Ativo { get; private set; }
 
-		public Instancia() { }
-
 		public Instancia(string nome,
 			string sistemaOperacional,
 			int quantidadeMemoria,
@@ -46,6 +44,18 @@ namespace SkyOne.Domain.Entities
 			QuantidadeMemoria = quantidadeMemoria;
 			Discos = discos;
 			Ativo = ativo;			
-		}		
+		}
+		
+		public Instancia Remover(Instancia instancia)
+        {
+			foreach(var disco in instancia.Discos.ToList())
+            {
+				Discos.Remove(disco);
+			}
+
+			instancia = null;
+
+			return instancia;
+		}
 	}
 }

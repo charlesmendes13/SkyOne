@@ -31,6 +31,6 @@ namespace SkyOne.Domain.Entities
             Tamanho = tamanho;
             Tipo = tipo;
             Ativo = ativo;           
-        }        
+        }   
     }
 }

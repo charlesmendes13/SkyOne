@@ -28,6 +28,24 @@ namespace SkyOne.Tests.Domain
                 ativo: true);            
 
             instancia.Should();
-        }       
+        } 
+        
+        [Fact]
+        public void RemoverInstaciaTest()
+        {
+            var instancia = new Instancia(nome: "PC",
+                sistemaOperacional: "Linux",
+                quantidadeMemoria: 1024,
+                discos: new List<Disco>()
+                {
+                    new Disco(tamanho: 2048, tipo: TipoDeDisco.Boot, ativo: true),
+                    new Disco(tamanho: 2048, tipo: TipoDeDisco.Armazenamento, ativo: true)
+                },
+                ativo: true);                       
+
+            instancia.Remover(instancia);
+
+            instancia.Should();
+        }
     }
 }
